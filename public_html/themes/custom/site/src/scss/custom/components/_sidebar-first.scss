@@ -1,0 +1,141 @@
+// |--------------------------------------------------------------------------
+// | Sidebar first
+// |--------------------------------------------------------------------------
+// |
+// | This file contains styles for the following:
+// | - .region-sidebar-first
+// |
+
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Styling
+// --------------------------------------------------
+
+// Sidebar first
+.region-sidebar-first {
+  padding-top: 80px;
+
+  .navbar-right {
+    float: none !important;
+    margin: 0;
+  }
+  .menu {
+
+    a,
+    li {
+      display: block;
+      float: none !important;
+    }
+
+    > li {
+      display: block;
+      padding: 0;
+
+      a {
+        font-family: $font-family-sans-serif;
+        font-size: $font-size-base;
+        font-weight: $font-weight;
+        color: #8e184e;
+        padding: 10px 5px;
+        border-bottom: 1px solid $border-color;
+        text-transform: none;
+      }
+
+      &:hover,
+      &.active {
+
+        a {
+          background-color: #dee4e6;
+        }
+      }
+    }
+  }
+}
+
+// --------------------------------------------------
+// Variants
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Responsive
+// --------------------------------------------------
+
+// Mobile - and up
+@include media-breakpoint-up(xs) {
+
+  // Sidebar first
+  .region-sidebar-first {}
+}
+
+// Mobile - only
+@include media-breakpoint-only(xs) {
+
+  // Sidebar first
+  .region-sidebar-first {}
+}
+
+// Tablet - and up
+@include media-breakpoint-up(sm) {
+
+  // Sidebar first
+  .region-sidebar-first {}
+}
+
+// Tablet - only
+@include media-breakpoint-only(sm) {
+
+  // Sidebar first
+  .region-sidebar-first {}
+}
+
+// Desktop - and up
+@include media-breakpoint-up(md) {
+
+  // Sidebar first
+  .region-sidebar-first {}
+}
+
+// Desktop - only
+@include media-breakpoint-only(md) {
+
+  // Sidebar first
+  .region-sidebar-first {}
+}
+
+// Large desktop - and up
+@include media-breakpoint-up(lg) {
+
+  // Sidebar first
+  .region-sidebar-first {}
+}
+
+// Print
+@media print {
+
+  // Sidebar first
+  .region-sidebar-first {}
+}
+
+// Touch
+.touchevents {
+
+  // Sidebar first
+  .region-sidebar-first {}
+}
+
+// No touch
+.no-touchevents {
+
+  // Sidebar first
+  .region-sidebar-first {}
+}
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+
+// Sidebar first mixin
+@mixin sidebar-mixin-first() {}

@@ -1,0 +1,128 @@
+// |--------------------------------------------------------------------------
+// | Navbar
+// |--------------------------------------------------------------------------
+// |
+// | This file contains styles for the following:
+// | - .navbar-nav
+// |
+
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Styling
+// --------------------------------------------------
+
+// Navbar
+.navbar {
+  border-bottom: 20px solid $brand-secondary;
+  margin-bottom: 0;
+}
+
+.navbar-nav {
+
+  > li {
+
+    > a {
+      font-size: $font-size-large;
+      font-weight: $font-weight-bold;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.path-frontpage {
+
+  .navbar {
+    border-bottom: 0;
+    margin: 0;
+  }
+}
+
+// --------------------------------------------------
+// Variants
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Responsive
+// --------------------------------------------------
+
+// Mobile - and up
+@include media-breakpoint-up(xs) {
+
+  // Navbar
+  .navbar-nav {}
+}
+
+// Mobile - only
+@include media-breakpoint-only(xs) {
+
+  // Navbar
+  .navbar-nav {}
+}
+
+// Tablet - and up
+@include media-breakpoint-up(sm) {
+
+  // Navbar
+  .navbar-nav {
+    margin-top: 40px;
+  }
+}
+
+// Tablet - only
+@include media-breakpoint-only(sm) {
+
+  // Navbar
+  .navbar-nav {}
+}
+
+// Desktop - and up
+@include media-breakpoint-up(md) {
+
+  // Navbar
+  .navbar-nav {}
+}
+
+// Desktop - only
+@include media-breakpoint-only(md) {
+
+  // Navbar
+  .navbar-nav {}
+}
+
+// Large desktop - and up
+@include media-breakpoint-up(lg) {
+
+  // Navbar
+  .navbar-nav {}
+}
+
+// Print
+@media print {
+
+  // Navbar
+  .navbar-nav {}
+}
+
+// Touch
+.touchevents {
+
+  // Navbar
+  .navbar-nav {}
+}
+
+// No touch
+.no-touchevents {
+
+  // Navbar
+  .navbar-nav {}
+}
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+
+// Navbar mixin
+@mixin navbar-mixin-nav() {}

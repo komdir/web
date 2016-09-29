@@ -1,0 +1,108 @@
+// |--------------------------------------------------------------------------
+// | Inner content
+// |--------------------------------------------------------------------------
+// |
+// | This file contains styles for the following:
+// | - .inner-content
+// |
+
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Styling
+// --------------------------------------------------
+
+// Inner content
+.inner-content {
+  background-color: $body-bg-secondary;
+  border-left: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+  padding: 80px 20px;
+}
+
+// --------------------------------------------------
+// Variants
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Responsive
+// --------------------------------------------------
+
+// Mobile - and up
+@include media-breakpoint-up(xs) {
+
+  // Inner content
+  .inner-content {}
+}
+
+// Mobile - only
+@include media-breakpoint-only(xs) {
+
+  // Inner content
+  .inner-content {}
+}
+
+// Tablet - and up
+@include media-breakpoint-up(sm) {
+
+  // Inner content
+  .inner-content {}
+}
+
+// Tablet - only
+@include media-breakpoint-only(sm) {
+
+  // Inner content
+  .inner-content {}
+}
+
+// Desktop - and up
+@include media-breakpoint-up(md) {
+
+  // Inner content
+  .inner-content {}
+}
+
+// Desktop - only
+@include media-breakpoint-only(md) {
+
+  // Inner content
+  .inner-content {}
+}
+
+// Large desktop - and up
+@include media-breakpoint-up(lg) {
+
+  // Inner content
+  .inner-content {}
+}
+
+// Print
+@media print {
+
+  // Inner content
+  .inner-content {}
+}
+
+// Touch
+.touchevents {
+
+  // Inner content
+  .inner-content {}
+}
+
+// No touch
+.no-touchevents {
+
+  // Inner content
+  .inner-content {}
+}
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+
+// Inner content mixin
+@mixin inner-mixin-content() {}
