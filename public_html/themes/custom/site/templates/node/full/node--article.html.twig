@@ -1,0 +1,43 @@
+<article{{ attributes.addClass(classes) }} class="node-full node-full-article">
+  <h1 class="node-title">{{ label }}</h1>
+
+  {% if node.hasField('field_date') %}
+    <div class="node-date">
+      {{ content.field_date }}
+    </div>
+  {% endif %}
+
+  {% if node.hasField('field_image') %}
+    <div class="row">
+      <div class="col-xs-8">
+  {% endif %}
+
+  {% if node.hasField('field_subdivision') %}
+    <div class="node-subdivision">
+      {{ content.field_subdivision }}
+    </div>
+  {% endif %}
+
+  {% if node.hasField('body') %}
+    <div class="node-body">
+      {{ content.body }}
+    </div>
+  {% endif %}
+
+  {% if node.hasField('field_image') %}
+    </div>
+    <div class="col-xs-4">
+  {% endif %}
+
+  {% if node.hasField('field_image') %}
+    <div class="node-image text-right">
+      {{ content.field_image }}
+    </div>
+  {% endif %}
+
+  {% if node.hasField('field_image') %}
+      </div>
+    </div>
+  {% endif %}
+
+</article>
