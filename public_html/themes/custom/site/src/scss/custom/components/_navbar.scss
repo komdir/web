@@ -16,7 +16,6 @@
 
 // Navbar
 .navbar {
-  border-bottom: 20px solid $brand-secondary;
   margin-bottom: 0;
 }
 
@@ -28,6 +27,15 @@
       font-size: $font-size-large;
       font-weight: $font-weight-bold;
       text-transform: uppercase;
+    }
+
+    .icon {
+      font-size: $font-size-large;
+      color: #fff;
+      cursor: pointer;
+      cursor: hand;
+      margin-top: 15px;
+      padding: 0 15px;
     }
   }
 }

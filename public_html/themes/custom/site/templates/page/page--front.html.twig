@@ -51,6 +51,20 @@ page.sidebar_second is empty ? 'col-sm-12'
             {% endif %}
             {# End - navbar #}
 
+            {# Begin - search #}
+            <div class="search-inline">
+                {% if page.search %}
+                    {% block search %}
+                        <div class="search-inline-inner">
+                            <div class="container">
+                                {{ page.search }}
+                            </div>
+                        </div>
+                    {% endblock %}
+                {% endif %}
+            </div>
+            {# End - search #}
+
             {# Begin - slideshow #}
             {% if page.slideshow %}
                 {% block slideshow %}
