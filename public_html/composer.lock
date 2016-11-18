@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c4c66e0707b457a72e8e00cd500b8332",
-    "content-hash": "b697c671c448dd73831a9e5071e32267",
+    "hash": "7e52a8df20eee525c8913f547762e833",
+    "content-hash": "c497059583193da9ab8c7c1a1ab1cb83",
     "packages": [
         {
             "name": "composer/installers",
@@ -758,8 +758,53 @@
             "homepage": "https://www.drupal.org/project/ctools",
             "support": {
                 "source": "http://cgit.drupalcode.org/ctools"
+            }
+        },
+        {
+            "name": "drupal/entityqueue",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/entityqueue",
+                "reference": "0359af5f0a229b61b46b2944d09c06739a52da5c"
             },
-            "time": "2016-08-20 19:59:03"
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha4+10-dev",
+                    "datestamp": "1476892739"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "amateescu",
+                    "homepage": "https://www.drupal.org/user/729614"
+                },
+                {
+                    "name": "jojonaloha",
+                    "homepage": "https://www.drupal.org/user/1579186"
+                },
+                {
+                    "name": "tim.plunkett",
+                    "homepage": "https://www.drupal.org/user/241634"
+                }
+            ],
+            "description": "Allows users to collect entities in arbitrarily ordered lists.",
+            "homepage": "https://www.drupal.org/project/entityqueue",
+            "support": {
+                "source": "http://cgit.drupalcode.org/entityqueue"
+            },
+            "time": "2016-10-19 15:54:22"
         },
         {
             "name": "drupal/linkit",
@@ -772,7 +817,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/linkit-8.x-5.0-beta3.zip",
-                "reference": null,
+                "reference": "8.x-5.0-beta3",
                 "shasum": "18fa681ae652fae30b51397ef2aaaeb8ecc3b288"
             },
             "require": {
@@ -859,8 +904,7 @@
             "homepage": "https://www.drupal.org/project/pathauto",
             "support": {
                 "source": "http://cgit.drupalcode.org/pathauto"
-            },
-            "time": "2016-09-04 21:39:32"
+            }
         },
         {
             "name": "drupal/token",
@@ -4705,7 +4749,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/pathauto": 20,
-        "drupal/ctools": 20
+        "drupal/ctools": 20,
+        "drupal/entityqueue": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

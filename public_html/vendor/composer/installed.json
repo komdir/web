@@ -4813,7 +4813,7 @@
         "dist": {
             "type": "zip",
             "url": "https://ftp.drupal.org/files/projects/linkit-8.x-5.0-beta3.zip",
-            "reference": null,
+            "reference": "8.x-5.0-beta3",
             "shasum": "18fa681ae652fae30b51397ef2aaaeb8ecc3b288"
         },
         "require": {
@@ -4850,6 +4850,53 @@
         "support": {
             "source": "http://cgit.drupalcode.org/linkit",
             "issues": "http://drupal.org/project/linkit"
+        }
+    },
+    {
+        "name": "drupal/entityqueue",
+        "version": "dev-1.x",
+        "version_normalized": "dev-1.x",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/entityqueue",
+            "reference": "0359af5f0a229b61b46b2944d09c06739a52da5c"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0-alpha4+10-dev",
+                "datestamp": "1476892739"
+            }
+        },
+        "installation-source": "source",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "amateescu",
+                "homepage": "https://www.drupal.org/user/729614"
+            },
+            {
+                "name": "jojonaloha",
+                "homepage": "https://www.drupal.org/user/1579186"
+            },
+            {
+                "name": "tim.plunkett",
+                "homepage": "https://www.drupal.org/user/241634"
+            }
+        ],
+        "description": "Allows users to collect entities in arbitrarily ordered lists.",
+        "homepage": "https://www.drupal.org/project/entityqueue",
+        "support": {
+            "source": "http://cgit.drupalcode.org/entityqueue"
         }
     }
 ]

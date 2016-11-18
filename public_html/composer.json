@@ -11,7 +11,8 @@
         "drupal/pathauto": "1.x-dev",
         "drupal/ctools": "3.x-dev",
         "drupal/views_slideshow": "^4.0",
-        "drupal/linkit": "^5.0-beta3"
+        "drupal/linkit": "^5.0-beta3",
+        "drupal/entityqueue": "1.x-dev"
     },
     "replace": {
         "drupal/core": "~8.1"
