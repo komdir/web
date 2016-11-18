@@ -12,7 +12,8 @@
         "drupal/ctools": "3.x-dev",
         "drupal/views_slideshow": "^4.0",
         "drupal/linkit": "^5.0-beta3",
-        "drupal/entityqueue": "1.x-dev"
+        "drupal/entityqueue": "1.x-dev",
+        "drupal/google_analytics": "^2.1"
     },
     "replace": {
         "drupal/core": "~8.1"
