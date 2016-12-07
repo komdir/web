@@ -13,7 +13,11 @@
         "drupal/views_slideshow": "^4.0",
         "drupal/linkit": "^5.0-beta3",
         "drupal/entityqueue": "1.x-dev",
-        "drupal/google_analytics": "^2.1"
+        "drupal/google_analytics": "^2.1",
+        "drupal/media_entity": "^1.5",
+        "drupal/media_entity_document": "^1.1",
+        "drupal/inline_entity_form": "1.x-dev",
+        "drupal/entity_browser": "1.x-dev"
     },
     "replace": {
         "drupal/core": "~8.1"

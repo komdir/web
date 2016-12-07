@@ -11,6 +11,16 @@
     <div class="node-body">
       {{ content.body }}
     </div>
+    <div class="clearfix"></div>
+  {% endif %}
+
+  {% if node.hasField('field_documents') %}
+    <br />
+    <hr />
+    <br />
+    <div class="node-files">
+      {{ content.field_documents }}
+    </div>
   {% endif %}
 
 </article>

@@ -4911,7 +4911,7 @@
         "dist": {
             "type": "zip",
             "url": "https://ftp.drupal.org/files/projects/google_analytics-8.x-2.1.zip",
-            "reference": null,
+            "reference": "8.x-2.1",
             "shasum": "9b5c76802ca28d5072bb9bb552bbfeb660b0734a"
         },
         "require": {
@@ -4951,6 +4951,333 @@
         "support": {
             "source": "http://git.drupal.org/project/google_analytics.git",
             "issues": "https://www.drupal.org/project/issues/google_analytics"
+        }
+    },
+    {
+        "name": "drupal/entity",
+        "version": "1.0.0-alpha3",
+        "version_normalized": "1.0.0.0-alpha3",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/entity",
+            "reference": "8.x-1.0-alpha3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/entity-8.x-1.0-alpha3.zip",
+            "reference": "8.x-1.0-alpha3",
+            "shasum": "67d7da97ca43468880426d1deeeccf87de7f1f40"
+        },
+        "require": {
+            "drupal/core": "~8.1"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0-alpha3",
+                "datestamp": "1461748139"
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Berdir",
+                "homepage": "https://www.drupal.org/user/214652"
+            },
+            {
+                "name": "bojanz",
+                "homepage": "https://www.drupal.org/user/86106"
+            },
+            {
+                "name": "dawehner",
+                "homepage": "https://www.drupal.org/user/99340"
+            },
+            {
+                "name": "dixon_",
+                "homepage": "https://www.drupal.org/user/239911"
+            },
+            {
+                "name": "fago",
+                "homepage": "https://www.drupal.org/user/16747"
+            }
+        ],
+        "description": "Provides expanded entity APIs, which will be moved to Drupal core one day.",
+        "homepage": "http://drupal.org/project/entity",
+        "support": {
+            "source": "http://cgit.drupalcode.org/entity"
+        }
+    },
+    {
+        "name": "drupal/media_entity",
+        "version": "1.5.0",
+        "version_normalized": "1.5.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/media_entity",
+            "reference": "8.x-1.5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/media_entity-8.x-1.5.zip",
+            "reference": "8.x-1.5",
+            "shasum": "bd594789d998e80be3296e45c9015d4c202dc273"
+        },
+        "require": {
+            "drupal/core": "~8.1",
+            "drupal/entity": "^1.0.0-alpha3"
+        },
+        "suggest": {
+            "drupal/entity": "Required by drupal/media_entity",
+            "drupal/inline_entity_form": "Required by drupal/media_entity"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.5",
+                "datestamp": "1472853239"
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Berdir",
+                "homepage": "https://www.drupal.org/user/214652"
+            },
+            {
+                "name": "Drupal Media Team",
+                "homepage": "https://www.drupal.org/user/3260690"
+            },
+            {
+                "name": "Drupal media CI",
+                "homepage": "https://www.drupal.org/user/3057985"
+            },
+            {
+                "name": "Primsi",
+                "homepage": "https://www.drupal.org/user/282629"
+            },
+            {
+                "name": "boztek",
+                "homepage": "https://www.drupal.org/user/134410"
+            },
+            {
+                "name": "jcisio",
+                "homepage": "https://www.drupal.org/user/210762"
+            },
+            {
+                "name": "slashrsm",
+                "homepage": "https://www.drupal.org/user/744628"
+            }
+        ],
+        "description": "Provides a lean and simple way to store media on Drupal 8 sites.",
+        "homepage": "https://www.drupal.org/project/media_entity",
+        "keywords": [
+            "Drupal"
+        ],
+        "support": {
+            "source": "https://www.drupal.org/project/media_entity",
+            "issues": "https://www.drupal.org/project/issues/media_entity"
+        }
+    },
+    {
+        "name": "drupal/media_entity_document",
+        "version": "1.1.0",
+        "version_normalized": "1.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/media_entity_document",
+            "reference": "8.x-1.1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/media_entity_document-8.x-1.1.zip",
+            "reference": "8.x-1.1",
+            "shasum": "88a45820cf0aeb5f8a3ade3338007771191508e4"
+        },
+        "require": {
+            "drupal/core": "~8.1",
+            "drupal/media_entity": "~1.0 || ~8.1.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.1",
+                "datestamp": "1470211439"
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "NerOcrO",
+                "homepage": "https://www.drupal.org/user/1728164",
+                "role": "Maintainer"
+            }
+        ],
+        "description": "Local documents integration for Drupal Media entity.",
+        "homepage": "https://www.drupal.org/project/media_entity_document",
+        "keywords": [
+            "Drupal",
+            "document",
+            "media"
+        ],
+        "support": {
+            "source": "https://www.drupal.org/project/media_entity_document",
+            "issues": "https://www.drupal.org/project/issues/media_entity_document"
+        }
+    },
+    {
+        "name": "drupal/inline_entity_form",
+        "version": "dev-1.x",
+        "version_normalized": "dev-1.x",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/inline_entity_form",
+            "reference": "dbfc93fc961b3e6c84497390c62ec36d02c1c4d7"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "suggest": {
+            "drupal/entity_reference_revisions": "Required by drupal/inline_entity_form"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0-beta1+2-dev",
+                "datestamp": "1479155639"
+            }
+        },
+        "installation-source": "source",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "bojanz",
+                "homepage": "https://www.drupal.org/user/86106"
+            },
+            {
+                "name": "dawehner",
+                "homepage": "https://www.drupal.org/user/99340"
+            },
+            {
+                "name": "rszrama",
+                "homepage": "https://www.drupal.org/user/49344"
+            },
+            {
+                "name": "slashrsm",
+                "homepage": "https://www.drupal.org/user/744628"
+            },
+            {
+                "name": "webflo",
+                "homepage": "https://www.drupal.org/user/254778"
+            }
+        ],
+        "description": "Provides a widget for inline management (creation, modification, removal) of referenced entities.",
+        "homepage": "https://www.drupal.org/project/inline_entity_form",
+        "support": {
+            "source": "http://cgit.drupalcode.org/inline_entity_form"
+        }
+    },
+    {
+        "name": "drupal/entity_browser",
+        "version": "dev-1.x",
+        "version_normalized": "dev-1.x",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/entity_browser",
+            "reference": "ffa2fa05510e15810dc85785029c8aa8d5939aac"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "suggest": {
+            "drupal/core": "Required by drupal/entity_browser_example",
+            "drupal/ctools": "Required by drupal/entity_browser",
+            "drupal/inline_entity_form": "Required by drupal/entity_browser",
+            "drupal/media_entity": "Required by drupal/entity_browser",
+            "drupal/paragraphs": "Required by drupal/entity_browser",
+            "drupal/token": "Required by drupal/entity_browser"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev",
+                "dev-8.x-1.x": "8.1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0-beta1+2-dev",
+                "datestamp": "1479380640"
+            }
+        },
+        "installation-source": "source",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Janez Urevc",
+                "homepage": "https://github.com/slashrsm",
+                "role": "Maintainer"
+            },
+            {
+                "name": "Primoz Hmeljak",
+                "homepage": "https://github.com/primsi",
+                "role": "Maintainer"
+            },
+            {
+                "name": "See other contributors",
+                "homepage": "https://www.drupal.org/node/1943336/committers",
+                "role": "contributor"
+            },
+            {
+                "name": "Primsi",
+                "homepage": "https://www.drupal.org/user/282629"
+            },
+            {
+                "name": "marcingy",
+                "homepage": "https://www.drupal.org/user/77320"
+            },
+            {
+                "name": "samuel.mortenson",
+                "homepage": "https://www.drupal.org/user/2582268"
+            },
+            {
+                "name": "slashrsm",
+                "homepage": "https://www.drupal.org/user/744628"
+            }
+        ],
+        "description": "Entity browsing and selecting component.",
+        "homepage": "http://drupal.org/project/entity_browser",
+        "support": {
+            "source": "http://cgit.drupalcode.org/entity_browser",
+            "issues": "http://drupal.org/project/issues/entity_browser",
+            "irc": "irc://irc.freenode.org/drupal-contribute"
         }
     }
 ]
