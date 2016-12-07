@@ -46,6 +46,7 @@ tmp
 private
 share
 others
+original_files
 
 # Files that might appear on external disks
 .Spotlight-V100
