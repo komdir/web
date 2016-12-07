@@ -5,22 +5,10 @@
     "license": "GPL-2.0+",
     "require": {
         "composer/installers": "^1.0.21",
-        "wikimedia/composer-merge-plugin": "~1.3",
-        "drupal/bootstrap": "3.x",
-        "drupal/admin_toolbar": "^1.17",
-        "drupal/pathauto": "1.x-dev",
-        "drupal/ctools": "3.x-dev",
-        "drupal/views_slideshow": "^4.0",
-        "drupal/linkit": "^5.0-beta3",
-        "drupal/entityqueue": "1.x-dev",
-        "drupal/google_analytics": "^2.1",
-        "drupal/media_entity": "^1.5",
-        "drupal/media_entity_document": "^1.1",
-        "drupal/inline_entity_form": "1.x-dev",
-        "drupal/entity_browser": "1.x-dev"
+        "wikimedia/composer-merge-plugin": "~1.3"
     },
     "replace": {
-        "drupal/core": "~8.1"
+        "drupal/core": "~8.2"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -40,13 +28,6 @@
             "recurse": false,
             "replace": false,
             "merge-extra": false
-        },
-        "installer-paths": {
-            "core": ["type:drupal-core"],
-            "modules/contrib/{$name}": ["type:drupal-module"],
-            "profiles/contrib/{$name}": ["type:drupal-profile"],
-            "themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/commands/{$name}": ["type:drupal-drush"]
         }
     },
     "autoload": {
@@ -59,11 +40,5 @@
         "post-autoload-dump": "Drupal\\Core\\Composer\\Composer::ensureHtaccess",
         "post-package-install": "Drupal\\Core\\Composer\\Composer::vendorTestCodeCleanup",
         "post-package-update": "Drupal\\Core\\Composer\\Composer::vendorTestCodeCleanup"
-    },
-    "repositories": {
-        "drupal": {
-            "type": "composer",
-            "url": "https://packages.drupal.org/8"
-        }
     }
 }
