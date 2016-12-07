@@ -10,9 +10,6 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
 
-span.file-icon { padding-right: 6px; }
-span.file-size { padding-left: 15px; }
-
 body {
   margin: 0; }
 
@@ -8962,6 +8959,24 @@ h6,
   padding: 0; }
   .path-frontpage .search-inline .search-inline-inner.visible {
     padding: 10px 0; }
+
+.block-views-blockindhold-fra-feed-block-1 .block-title {
+  font-size: 22px;
+  margin: 0;
+  margin-bottom: 6px; }
+
+.block-views-blockindhold-fra-feed-block-1 .views-row {
+  padding: 20px 0;
+  border-bottom: 1px solid #ccd6d9; }
+  .block-views-blockindhold-fra-feed-block-1 .views-row .views-field-title h3, .block-views-blockindhold-fra-feed-block-1 .views-row .views-field-title .heading-h3, .block-views-blockindhold-fra-feed-block-1 .views-row .views-field-title a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #8e184e;
+    margin: 0;
+    margin-bottom: 6px; }
+  .block-views-blockindhold-fra-feed-block-1 .views-row:last-child {
+    border-bottom: 0;
+    padding-bottom: 0; }
 
 .node-full {
   padding-bottom: 20px;

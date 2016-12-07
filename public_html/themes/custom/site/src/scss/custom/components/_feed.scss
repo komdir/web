@@ -1,0 +1,124 @@
+// |--------------------------------------------------------------------------
+// | Feed
+// |--------------------------------------------------------------------------
+// |
+// | This file contains styles for the following:
+// | - .block-views-blockindhold-fra-feed-block-1
+// |
+
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Styling
+// --------------------------------------------------
+
+// Feed
+.block-views-blockindhold-fra-feed-block-1 {
+
+  .block-title {
+    font-size: $font-size-h3;
+    margin: 0;
+    margin-bottom: 6px;
+  }
+
+  .views-row {
+    padding: 20px 0;
+    border-bottom: 1px solid #ccd6d9;
+
+    .views-field-title {
+
+      h3, a {
+        font-size: $font-size-h5;
+        font-weight: $headings-font-weight;
+        color: #8e184e;
+        margin: 0;
+        margin-bottom: 6px;
+      }
+    }
+
+    &:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+
+// --------------------------------------------------
+// Variants
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Responsive
+// --------------------------------------------------
+
+// Mobile - and up
+@include media-breakpoint-up(xs) {
+
+  // Feed
+  .block-views-blockindhold-fra-feed-block-1 {}
+}
+
+// Mobile - only
+@include media-breakpoint-only(xs) {
+
+  // Feed
+  .block-views-blockindhold-fra-feed-block-1 {}
+}
+
+// Tablet - and up
+@include media-breakpoint-up(sm) {
+
+  // Feed
+  .block-views-blockindhold-fra-feed-block-1 {}
+}
+
+// Tablet - only
+@include media-breakpoint-only(sm) {
+
+  // Feed
+  .block-views-blockindhold-fra-feed-block-1 {}
+}
+
+// Desktop - and up
+@include media-breakpoint-up(md) {
+
+  // Feed
+  .block-views-blockindhold-fra-feed-block-1 {}
+}
+
+// Desktop - only
+@include media-breakpoint-only(md) {
+
+  // Feed
+  .block-views-blockindhold-fra-feed-block-1 {}
+}
+
+// Large desktop - and up
+@include media-breakpoint-up(lg) {
+
+  // Feed
+  .block-views-blockindhold-fra-feed-block-1 {}
+}
+
+// Print
+@media print {
+
+  // Feed
+  .block-views-blockindhold-fra-feed-block-1 {}
+}
+
+// Touch
+.touchevents {
+
+  // Feed
+  .block-views-blockindhold-fra-feed-block-1 {}
+}
+
+// No touch
+.no-touchevents {
+
+  // Feed
+  .block-views-blockindhold-fra-feed-block-1 {}
+}
