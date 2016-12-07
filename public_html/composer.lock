@@ -758,7 +758,8 @@
             "homepage": "https://www.drupal.org/project/ctools",
             "support": {
                 "source": "http://cgit.drupalcode.org/ctools"
-            }
+            },
+            "time": "2016-08-20 19:59:03"
         },
         {
             "name": "drupal/entity",
@@ -825,7 +826,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/entity_browser",
-                "reference": "ffa2fa05510e15810dc85785029c8aa8d5939aac"
+                "reference": "44dda5dadc45549e91b5caff70d7d121477a794d"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -845,8 +846,8 @@
                     "dev-8.x-1.x": "8.1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta1+2-dev",
-                    "datestamp": "1479380640"
+                    "version": "8.x-1.0-beta2+2-dev",
+                    "datestamp": "1480603683"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -893,7 +894,7 @@
                 "issues": "http://drupal.org/project/issues/entity_browser",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             },
-            "time": "2016-11-17 10:59:55"
+            "time": "2016-12-01 14:47:16"
         },
         {
             "name": "drupal/entityqueue",
@@ -901,7 +902,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/entityqueue",
-                "reference": "0359af5f0a229b61b46b2944d09c06739a52da5c"
+                "reference": "f755d8cbc7039eaa3b5d056648a8ef3956a83c1e"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -912,8 +913,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha4+10-dev",
-                    "datestamp": "1476892739"
+                    "version": "8.x-1.0-alpha4+13-dev",
+                    "datestamp": "1479728339"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -939,7 +940,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/entityqueue"
             },
-            "time": "2016-10-19 15:54:22"
+            "time": "2016-11-21 11:39:00"
         },
         {
             "name": "drupal/google_analytics",
@@ -1047,8 +1048,7 @@
             "homepage": "https://www.drupal.org/project/inline_entity_form",
             "support": {
                 "source": "http://cgit.drupalcode.org/inline_entity_form"
-            },
-            "time": "2016-11-14 20:32:26"
+            }
         },
         {
             "name": "drupal/linkit",
@@ -1275,7 +1275,8 @@
             "homepage": "https://www.drupal.org/project/pathauto",
             "support": {
                 "source": "http://cgit.drupalcode.org/pathauto"
-            }
+            },
+            "time": "2016-09-04 21:39:32"
         },
         {
             "name": "drupal/token",
