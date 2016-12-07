@@ -1081,10 +1081,10 @@ textarea {
   line-height: inherit; }
 
 a {
-  color: #172236;
+  color: #8e184e;
   text-decoration: none; }
   a:hover, a:focus {
-    color: black;
+    color: #4d0d2a;
     text-decoration: underline; }
   a:focus {
     outline: 5px auto -webkit-focus-ring-color;
@@ -3048,7 +3048,7 @@ fieldset[disabled] a {
     background-color: #fff; }
 
 .btn-link {
-  color: #172236;
+  color: #8e184e;
   font-weight: normal;
   border-radius: 0; }
   .btn-link, .btn-link:active, .btn-link.active, .btn-link[disabled],
@@ -3059,7 +3059,7 @@ fieldset[disabled] a {
   .btn-link, .btn-link:hover, .btn-link:focus, .btn-link:active {
     border-color: transparent; }
   .btn-link:hover, .btn-link:focus {
-    color: black;
+    color: #4d0d2a;
     text-decoration: underline;
     background-color: transparent; }
   .btn-link[disabled]:hover, .btn-link[disabled]:focus,
@@ -3589,7 +3589,7 @@ tbody.collapse.in {
         cursor: not-allowed; }
   .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
     background-color: #eeeeee;
-    border-color: #172236; }
+    border-color: #8e184e; }
   .nav .nav-divider {
     height: 1px;
     margin: 9px 0;
@@ -4298,7 +4298,7 @@ a.label:hover, a.label:focus {
     padding: 1px 5px; }
   .list-group-item.active > .badge,
   .nav-pills > .active > a > .badge {
-    color: #172236;
+    color: #8e184e;
     background-color: #fff; }
   .list-group-item > .badge {
     float: right; }
@@ -4371,7 +4371,7 @@ a.badge:hover, a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #172236; }
+  border-color: #8e184e; }
 
 .alert {
   padding: 15px;
@@ -8969,7 +8969,7 @@ h6,
   padding: 20px 0;
   border-bottom: 1px solid #ccd6d9; }
   .block-views-blockindhold-fra-feed-block-1 .views-row .views-field-title h3, .block-views-blockindhold-fra-feed-block-1 .views-row .views-field-title .heading-h3, .block-views-blockindhold-fra-feed-block-1 .views-row .views-field-title a {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
     color: #8e184e;
     margin: 0;
