@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8d5e9a22c9b91635e884dc7a50f311cb",
-    "content-hash": "913fb563cd6905cb94e1a26e6e03a431",
+    "hash": "af5ad7ca9d681fb9c0e5f864c36f427a",
+    "content-hash": "2ae649c56b91340d44a1a9e49b060f38",
     "packages": [
         {
             "name": "components/jquery",
@@ -421,11 +421,17 @@
         },
         {
             "name": "drupal/ctools",
-            "version": "dev-3.x",
+            "version": "3.0.0-alpha27",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/ctools",
-                "reference": "231e2649678d58901368a9e5681f36865ce84e73"
+                "reference": "8.x-3.0-alpha27"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.0-alpha27.zip",
+                "reference": null,
+                "shasum": "3e069c46902dd05c2a4e0caf7b185942e9b53238"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -439,7 +445,7 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-alpha27+0-dev",
+                    "version": "8.x-3.0-alpha27",
                     "datestamp": "1471723439"
                 }
             },
@@ -493,8 +499,7 @@
             "homepage": "https://www.drupal.org/project/ctools",
             "support": {
                 "source": "http://cgit.drupalcode.org/ctools"
-            },
-            "time": "2016-08-20 19:59:03"
+            }
         },
         {
             "name": "drupal/devel",
@@ -574,8 +579,7 @@
                 "source": "http://cgit.drupalcode.org/devel",
                 "issues": "http://drupal.org/project/devel",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
-            },
-            "time": "2016-12-04 14:31:11"
+            }
         },
         {
             "name": "drupal/field_permissions",
@@ -625,8 +629,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/field_permissions",
                 "issues": "https://www.drupal.org/project/issues/field_permissions"
-            },
-            "time": "2016-07-20 20:17:34"
+            }
         },
         {
             "name": "drupal/flag",
@@ -694,8 +697,7 @@
             "homepage": "https://www.drupal.org/project/flag",
             "support": {
                 "source": "http://cgit.drupalcode.org/flag"
-            },
-            "time": "2016-12-06 07:50:36"
+            }
         },
         {
             "name": "drupal/pathauto",
@@ -746,8 +748,7 @@
             "homepage": "https://www.drupal.org/project/pathauto",
             "support": {
                 "source": "http://cgit.drupalcode.org/pathauto"
-            },
-            "time": "2016-12-06 19:47:16"
+            }
         },
         {
             "name": "drupal/shs",
@@ -787,8 +788,7 @@
             "homepage": "https://www.drupal.org/project/shs",
             "support": {
                 "source": "http://cgit.drupalcode.org/shs"
-            },
-            "time": "2016-11-30 05:32:31"
+            }
         },
         {
             "name": "drupal/token",
@@ -1082,12 +1082,11 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/pathauto": 20,
-        "drupal/ctools": 20,
         "drupal/devel": 20,
         "drupal/flag": 20,
         "drupal/field_permissions": 20,
-        "drupal/shs": 20
+        "drupal/shs": 20,
+        "drupal/pathauto": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
