@@ -1,0 +1,118 @@
+// |--------------------------------------------------------------------------
+// | Slideshow
+// |--------------------------------------------------------------------------
+// |
+// | This file contains styles for the following:
+// | - .slideshow-outer
+// |
+
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Styling
+// --------------------------------------------------
+
+// Slideshow
+.slideshow-outer {
+  background: url("../img/slideshow-bg.jpg") repeat-x;
+}
+
+.region-slideshow {
+  height: 200px;
+  overflow: hidden;
+}
+
+// --------------------------------------------------
+// Variants
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Responsive
+// --------------------------------------------------
+
+// Mobile - and up
+@include media-breakpoint-up(xs) {
+
+  // Slideshow
+  .slideshow-outer {}
+}
+
+// Mobile - only
+@include media-breakpoint-only(xs) {
+
+  // Slideshow
+  .slideshow-outer {}
+
+  .region-slideshow {
+    display: none;
+  }
+}
+
+// Tablet - and up
+@include media-breakpoint-up(sm) {
+
+  // Slideshow
+  .slideshow-outer {}
+}
+
+// Tablet - only
+@include media-breakpoint-only(sm) {
+
+  // Slideshow
+  .slideshow-outer {}
+
+  .region-slideshow {
+    display: none;
+  }
+}
+
+// Desktop - and up
+@include media-breakpoint-up(md) {
+
+  // Slideshow
+  .slideshow-outer {}
+}
+
+// Desktop - only
+@include media-breakpoint-only(md) {
+
+  // Slideshow
+  .slideshow-outer {}
+}
+
+// Large desktop - and up
+@include media-breakpoint-up(lg) {
+
+  // Slideshow
+  .slideshow-outer {}
+}
+
+// Print
+@media print {
+
+  // Slideshow
+  .slideshow-outer {}
+}
+
+// Touch
+.touchevents {
+
+  // Slideshow
+  .slideshow-outer {}
+}
+
+// No touch
+.no-touchevents {
+
+  // Slideshow
+  .slideshow-outer {}
+}
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+
+// Slideshow mixin
+@mixin slideshow-mixin-outer() {}

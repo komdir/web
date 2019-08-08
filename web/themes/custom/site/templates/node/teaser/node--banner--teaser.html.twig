@@ -1,0 +1,17 @@
+<article{{ attributes.addClass(classes) }}>
+    <div class="node-teaser node-teaser-banner">
+        <a href="{{ banner_link }}">
+            <div class="node-teaser-banner-inner">
+
+                <h4 class="node-teaser-title">{{ label }}</h4>
+
+                {% if node.hasField('body') %}
+                    <div class="node-teaser-body">
+                        {{ content.body }}
+                    </div>
+                {% endif %}
+
+            </div>
+        </a>
+    </div>
+</article>

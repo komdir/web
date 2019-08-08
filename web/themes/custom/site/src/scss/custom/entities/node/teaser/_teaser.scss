@@ -1,0 +1,223 @@
+// |--------------------------------------------------------------------------
+// | Teaser
+// |--------------------------------------------------------------------------
+// |
+// | This file contains styles for the following:
+// | - .node-teaser
+// |
+
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Styling
+// --------------------------------------------------
+
+// Teaser
+.node-teaser {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid $border-color;
+
+  &.node-teaser-banner,
+  &.node-teaser-article {
+    @include clearfix;
+  }
+
+  .node-teaser-image {
+    float: left;
+    padding-right: 15px;
+
+    img {
+      border-radius: 5px;
+    }
+  }
+
+  //.node-teaser-right-content {
+  //  float: left;
+  //}
+
+  .node-teaser-title {
+
+    &,
+    span,
+    a {
+      @extend .heading-h4;
+      font-weight: $headings-font-weight-bold;
+      color: #0190bf !important;
+    }
+  }
+
+  .node-teaser-date {
+    color: $text-muted;
+    font-style: italic;
+    font-size: $font-size-small;
+
+    + .node-teaser-title {
+      margin-top: 0;
+    }
+  }
+
+  .node-teaser-subdivision {
+    .field--name-field-subdivision {
+      font-size: $font-size-base;
+      padding: 5px 0;
+      margin: 0;
+      border: 0;
+    }
+  }
+
+  &.node-teaser-banner {
+    height: 174px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url('../img/banner-bg-1.png'); // Default
+    padding-bottom: 0;
+    border-bottom: 0;
+
+    .node-teaser-banner-inner {
+      width: 230px;
+      padding-right: 40px;
+      padding-left: 15px;
+      margin: auto;
+    }
+
+    > a {
+
+      &,
+      &:hover,
+      &:focus,
+      &:active {
+        text-decoration: none;
+      }
+    }
+
+    .node-teaser-title,
+    .node-teaser-body {
+
+      &,
+      span,
+      a {
+
+        &,
+        &:hover,
+        &:active {
+          color: #fff !important;
+        }
+      }
+    }
+  }
+}
+
+.view-id-banners {
+
+  .views-row {
+
+    &:nth-child(1) {
+
+      .node-teaser {
+        background-image: url('../img/banner-bg-1.png');
+      }
+    }
+
+    &:nth-child(2) {
+
+      .node-teaser {
+        background-image: url('../img/banner-bg-2.png');
+      }
+    }
+
+    &:nth-child(3) {
+
+      .node-teaser {
+        background-image: url('../img/banner-bg-3.png');
+      }
+    }
+  }
+}
+
+// --------------------------------------------------
+// Variants
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Responsive
+// --------------------------------------------------
+
+// Mobile - and up
+@include media-breakpoint-up(xs) {
+
+  // Teaser
+  .node-teaser {}
+}
+
+// Mobile - only
+@include media-breakpoint-only(xs) {
+
+  // Teaser
+  .node-teaser {}
+}
+
+// Tablet - and up
+@include media-breakpoint-up(sm) {
+
+  // Teaser
+  .node-teaser {}
+}
+
+// Tablet - only
+@include media-breakpoint-only(sm) {
+
+  // Teaser
+  .node-teaser {}
+}
+
+// Desktop - and up
+@include media-breakpoint-up(md) {
+
+  // Teaser
+  .node-teaser {}
+}
+
+// Desktop - only
+@include media-breakpoint-only(md) {
+
+  // Teaser
+  .node-teaser {}
+}
+
+// Large desktop - and up
+@include media-breakpoint-up(lg) {
+
+  // Teaser
+  .node-teaser {}
+}
+
+// Print
+@media print {
+
+  // Teaser
+  .node-teaser {}
+}
+
+// Touch
+.touchevents {
+
+  // Teaser
+  .node-teaser {}
+}
+
+// No touch
+.no-touchevents {
+
+  // Teaser
+  .node-teaser {}
+}
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+
+// Teaser mixin
+@mixin node-mixin-teaser() {}

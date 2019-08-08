@@ -1,0 +1,26 @@
+<article{{ attributes.addClass(classes) }} class="node-full">
+  <h1 class="node-title">{{ label }}</h1>
+
+  {% if node.hasField('field_subdivision') %}
+    <div class="node-subdivision">
+      {{ content.field_subdivision }}
+    </div>
+  {% endif %}
+
+  {% if node.hasField('body') %}
+    <div class="node-body">
+      {{ content.body }}
+    </div>
+    <div class="clearfix"></div>
+  {% endif %}
+
+  {% if node.hasField('field_documents') %}
+    <br />
+    <hr />
+    <br />
+    <div class="node-files">
+      {{ content.field_documents }}
+    </div>
+  {% endif %}
+
+</article>

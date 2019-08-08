@@ -1,0 +1,137 @@
+// |--------------------------------------------------------------------------
+// | List
+// |--------------------------------------------------------------------------
+// |
+// | This file contains styles for the following:
+// | - .node-list
+// |
+
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Styling
+// --------------------------------------------------
+
+// List
+.node-list {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid $border-color;
+
+  .node-list-title {
+
+    &,
+    span,
+    a {
+      @extend .heading-h4;
+      font-weight: $headings-font-weight-bold;
+      color: #0190bf !important;
+    }
+  }
+
+  .node-list-date {
+    color: $text-muted;
+    font-style: italic;
+    font-size: $font-size-small;
+
+    + .node-list-title {
+      margin-top: 0;
+    }
+  }
+
+  .node-list-subdivision {
+    .field--name-field-subdivision {
+      font-size: $font-size-base;
+      padding: 5px 0;
+      margin: 0;
+      border: 0;
+    }
+  }
+}
+
+// --------------------------------------------------
+// Variants
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Responsive
+// --------------------------------------------------
+
+// Mobile - and up
+@include media-breakpoint-up(xs) {
+
+  // List
+  .node-list {}
+}
+
+// Mobile - only
+@include media-breakpoint-only(xs) {
+
+  // List
+  .node-list {}
+}
+
+// Tablet - and up
+@include media-breakpoint-up(sm) {
+
+  // List
+  .node-list {}
+}
+
+// Tablet - only
+@include media-breakpoint-only(sm) {
+
+  // List
+  .node-list {}
+}
+
+// Desktop - and up
+@include media-breakpoint-up(md) {
+
+  // List
+  .node-list {}
+}
+
+// Desktop - only
+@include media-breakpoint-only(md) {
+
+  // List
+  .node-list {}
+}
+
+// Large desktop - and up
+@include media-breakpoint-up(lg) {
+
+  // List
+  .node-list {}
+}
+
+// Print
+@media print {
+
+  // List
+  .node-list {}
+}
+
+// Touch
+.touchevents {
+
+  // List
+  .node-list {}
+}
+
+// No touch
+.no-touchevents {
+
+  // List
+  .node-list {}
+}
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+
+// List mixin
+@mixin node-mixin-list() {}

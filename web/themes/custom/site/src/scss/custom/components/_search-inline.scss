@@ -1,0 +1,37 @@
+.search-inline {
+  background-color: $brand-secondary;
+  padding: 10px 0;
+
+  .search-inline-inner {
+    display: none;
+
+    &.visible {
+      display: block;
+    }
+  }
+
+  .form-group {
+    margin-bottom: 0;
+  }
+
+  form {
+    max-width: 350px;
+    text-align: right;
+
+    @extend .pull-right;
+  }
+}
+
+.path-frontpage {
+
+  .search-inline {
+    padding: 0;
+
+    .search-inline-inner {
+
+      &.visible {
+        padding: 10px 0;
+      }
+    }
+  }
+}

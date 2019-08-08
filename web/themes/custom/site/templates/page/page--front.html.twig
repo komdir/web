@@ -1,0 +1,187 @@
+{%
+set content_classes = [
+page.sidebar_second ? 'col-sm-9',
+page.sidebar_second is empty ? 'col-sm-12'
+]
+%}
+
+{# Begin - outer wrapper #}
+<div class="outer-wrapper">
+
+    {# Begin - inner wrapper #}
+    <div class="inner-wrapper">
+
+        {# Begin - content #}
+        <div class="content">
+
+            {# Begin - navbar #}
+            {% if page.navigation or page.navigation_collapsible %}
+                {% block navbar %}
+                    {%
+                    set navbar_classes = [
+                    'navbar',
+                    theme.settings.navbar_inverse ? 'navbar-inverse' : 'navbar-default',
+                    theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
+                    ]
+                    %}
+                    <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
+                        <div class="container">
+                            <div class="navbar-header">
+                                {{ page.navigation }}
+                                {# .btn-navbar is used as the toggle for collapsed navbar content #}
+                                {% if page.navigation_collapsible %}
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                        <span class="sr-only">{{ 'Toggle navigation'|t }}</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                {% endif %}
+                            </div>
+
+                            {# Navigation (collapsible) #}
+                            {% if page.navigation_collapsible %}
+                                <div class="navbar-collapse collapse">
+                                    {{ page.navigation_collapsible }}
+                                </div>
+                            {% endif %}
+                        </div>
+                    </header>
+                {% endblock %}
+            {% endif %}
+            {# End - navbar #}
+
+            {# Begin - search #}
+            <div class="search-inline">
+                {% if page.search %}
+                    {% block search %}
+                        <div class="search-inline-inner">
+                            <div class="container">
+                                {{ page.search }}
+                            </div>
+                        </div>
+                    {% endblock %}
+                {% endif %}
+            </div>
+            {# End - search #}
+
+            {# Begin - slideshow #}
+            {% if page.slideshow %}
+                {% block slideshow %}
+                    <div class="slideshow-outer">
+                        <div class="container">
+                            {{ page.slideshow }}
+                        </div>
+                    </div>
+                {% endblock %}
+            {% endif %}
+            {# End - slideshow #}
+
+            <div class="container">
+                <div class="row">
+
+                    <section{{ content_attributes.addClass(content_classes) }}>
+                        <div class="inner-content">
+
+                            {# Begin - highlighted #}
+                            {% if page.highlighted %}
+                                {% block highlighted %}
+                                    <div class="highlighted">{{ page.highlighted }}</div>
+                                {% endblock %}
+                            {% endif %}
+                            {# End - highlighted #}
+
+                            {# Begin - breadcrumbs #}
+                            {% if breadcrumb %}
+                                {% block breadcrumb %}
+                                    {{ breadcrumb }}
+                                {% endblock %}
+                            {% endif %}
+                            {# End - breadcrumbs #}
+
+                            {# Begin - action Links #}
+                            {% if action_links %}
+                                {% block action_links %}
+                                    <ul class="action-links">{{ action_links }}</ul>
+                                {% endblock %}
+                            {% endif %}
+                            {# End - action Links #}
+
+                            {# Begin - help #}
+                            {% if page.help %}
+                                {% block help %}
+                                    {{ page.help }}
+                                {% endblock %}
+                            {% endif %}
+                            {# End - help #}
+
+                            {# Begin - content #}
+                            {% block content %}
+                                <a id="main-content"></a>
+                                {{ page.content }}
+                            {% endblock %}
+                            {# End - content #}
+
+                        </div>
+                    </section>
+
+                    {# Begin - sidebar second #}
+                    {% if page.sidebar_second %}
+                        {% block sidebar_second %}
+                            <aside class="col-sm-3" role="complementary">
+                                {{ page.sidebar_second }}
+                            </aside>
+                        {% endblock %}
+                    {% endif %}
+                    {# End - sidebar second #}
+
+                </div>
+            </div>
+        </div>
+        {# End - content #}
+
+        {# Begin - footer #}
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-3">
+                        <div class="footer-contact-information">
+                            <h4>KOMDIR sekretariatet</h4>
+                            <div class="footer-marked">
+                                <p>Roskilde Kommune</p>
+                                <p>Rådhuset, Rådhusbuen 1</p>
+                                <p>4000 Roskilde</p>
+                                <p>Tlf.: <a href="tel:004546318010">4631 8010</a></p>
+                                <p>E-mail.: <a href="mailto:komdir@roskilde.dk">komdir@roskilde.dk</a></p>
+                                <p><a href="http://findvej.dk/Rådhuset, Rådhusbuen 1, 4000 Roskilde" target="_blank">Vis på kort</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {# Begin - footer menu #}
+                    {% if page.footer_menu %}
+                        {% block footer_menu %}
+                            <aside class="col-xs-12 col-sm-3">
+                                {{ page.footer_menu }}
+                            </aside>
+                        {% endblock %}
+                    {% endif %}
+                    {# End - footer menu #}
+
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="footer-copyright">
+                            <div class="footer-marked">
+                                <p>2016 © KOMDIR Danmark. Alle ophavsrettigheder forbeholdes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        {# End - footer #}
+
+    </div>
+    {# End - inner wrapper #}
+
+</div>
+{# End - outer wrapper #}
