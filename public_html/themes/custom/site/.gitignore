@@ -1,3 +1,0 @@
-src/vendor
-!src/scss/**/vendor
-node_modules/
