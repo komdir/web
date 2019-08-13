@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2830332faece12251e00c437570c0f44",
+    "content-hash": "f7d37e247c14e2fe12afc4d765076bfd",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -71,6 +71,23 @@
             "time": "2018-02-22T13:58:36+00:00"
         },
         {
+            "name": "algolia/places",
+            "version": "1.16.4",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/places.js/-/places.js-1.16.4.tgz",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "algolia.places"
+            }
+        },
+        {
             "name": "asm89/stack-cors",
             "version": "1.2.0",
             "source": {
@@ -133,7 +150,8 @@
             "dist": {
                 "type": "drupal-library",
                 "url": "https://github.com/briancherne/jquery-hoverIntent.git",
-                "reference": "origin/master"
+                "reference": "origin/master",
+                "shasum": null
             },
             "type": "drupal-library",
             "time": "2019-03-02T11:14:21+00:00"
@@ -220,17 +238,136 @@
             "time": "2019-06-29T10:29:45+00:00"
         },
         {
+            "name": "choices/choices",
+            "version": "7.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/jshjohnson/Choices/archive/v7.0.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "choices"
+            }
+        },
+        {
+            "name": "ckeditor/autogrow",
+            "version": "4.11.3",
+            "dist": {
+                "type": "zip",
+                "url": "https://download.ckeditor.com/autogrow/releases/autogrow_4.11.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "ckeditor.autogrow"
+            }
+        },
+        {
+            "name": "ckeditor/codemirror",
+            "version": "v1.17.12",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/w8tcha/CKEditor-CodeMirror-Plugin/releases/download/v1.17.12/CKEditor-CodeMirror-Plugin.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "ckeditor.codemirror"
+            }
+        },
+        {
+            "name": "ckeditor/fakeobjects",
+            "version": "4.11.3",
+            "dist": {
+                "type": "zip",
+                "url": "https://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.11.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "ckeditor.fakeobjects"
+            }
+        },
+        {
+            "name": "ckeditor/image",
+            "version": "4.11.3",
+            "dist": {
+                "type": "zip",
+                "url": "https://download.ckeditor.com/image/releases/image_4.11.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "ckeditor.image"
+            }
+        },
+        {
+            "name": "ckeditor/link",
+            "version": "4.11.3",
+            "dist": {
+                "type": "zip",
+                "url": "https://download.ckeditor.com/link/releases/link_4.11.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "ckeditor.link"
+            }
+        },
+        {
+            "name": "codemirror/codemirror",
+            "version": "5.47.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/components/codemirror/archive/5.47.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "codemirror"
+            }
+        },
+        {
             "name": "composer/installers",
-            "version": "v1.6.0",
+            "version": "v1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "cfcca6b1b60bc4974324efb5783c13dca6932b5b"
+                "reference": "141b272484481432cda342727a427dc1e206bfa0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/cfcca6b1b60bc4974324efb5783c13dca6932b5b",
-                "reference": "cfcca6b1b60bc4974324efb5783c13dca6932b5b",
+                "url": "https://api.github.com/repos/composer/installers/zipball/141b272484481432cda342727a427dc1e206bfa0",
+                "reference": "141b272484481432cda342727a427dc1e206bfa0",
                 "shasum": ""
             },
             "require": {
@@ -286,6 +423,7 @@
                 "RadPHP",
                 "SMF",
                 "Thelia",
+                "Whmcs",
                 "WolfCMS",
                 "agl",
                 "aimeos",
@@ -308,6 +446,7 @@
                 "installer",
                 "itop",
                 "joomla",
+                "known",
                 "kohana",
                 "laravel",
                 "lavalite",
@@ -337,7 +476,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2018-08-27T06:10:37+00:00"
+            "time": "2019-08-12T15:00:31+00:00"
         },
         {
             "name": "composer/semver",
@@ -1068,16 +1207,16 @@
         },
         {
             "name": "consolidation/site-process",
-            "version": "2.0.3",
+            "version": "2.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/site-process.git",
-                "reference": "e25265f4a48c13284ebb6f9e0906ecd415d451df"
+                "reference": "e159f849abce696c2f5081c149a1f8ec8717dd97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/site-process/zipball/e25265f4a48c13284ebb6f9e0906ecd415d451df",
-                "reference": "e25265f4a48c13284ebb6f9e0906ecd415d451df",
+                "url": "https://api.github.com/repos/consolidation/site-process/zipball/e159f849abce696c2f5081c149a1f8ec8717dd97",
+                "reference": "e159f849abce696c2f5081c149a1f8ec8717dd97",
                 "shasum": ""
             },
             "require": {
@@ -1127,16 +1266,16 @@
             ],
             "authors": [
                 {
-                    "name": "Moshe Weitzman",
-                    "email": "weitzman@tejasa.com"
-                },
-                {
                     "name": "Greg Anderson",
                     "email": "greg.1.anderson@greenknowe.org"
+                },
+                {
+                    "name": "Moshe Weitzman",
+                    "email": "weitzman@tejasa.com"
                 }
             ],
             "description": "A thin wrapper around the Symfony Process Component that allows applications to use the Site Alias library to specify the target for a remote call.",
-            "time": "2019-06-04T22:23:52+00:00"
+            "time": "2019-08-12T23:10:26+00:00"
         },
         {
             "name": "container-interop/container-interop",
@@ -1419,16 +1558,16 @@
         },
         {
             "name": "doctrine/annotations",
-            "version": "v1.6.1",
+            "version": "v1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "53120e0eb10355388d6ccbe462f1fea34ddadb24"
+                "reference": "fa4c4e861e809d6a1103bd620cce63ed91aedfeb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/53120e0eb10355388d6ccbe462f1fea34ddadb24",
-                "reference": "53120e0eb10355388d6ccbe462f1fea34ddadb24",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/fa4c4e861e809d6a1103bd620cce63ed91aedfeb",
+                "reference": "fa4c4e861e809d6a1103bd620cce63ed91aedfeb",
                 "shasum": ""
             },
             "require": {
@@ -1437,12 +1576,12 @@
             },
             "require-dev": {
                 "doctrine/cache": "1.*",
-                "phpunit/phpunit": "^6.4"
+                "phpunit/phpunit": "^7.5@dev"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.6.x-dev"
+                    "dev-master": "1.7.x-dev"
                 }
             },
             "autoload": {
@@ -1456,16 +1595,16 @@
             ],
             "authors": [
                 {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
                     "name": "Roman Borschel",
                     "email": "roman@code-factory.org"
                 },
                 {
                     "name": "Benjamin Eberlei",
                     "email": "kontakt@beberlei.de"
-                },
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com"
                 },
                 {
                     "name": "Jonathan Wage",
@@ -1483,7 +1622,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2019-03-25T19:12:02+00:00"
+            "time": "2019-08-08T18:11:40+00:00"
         },
         {
             "name": "doctrine/cache",
@@ -1854,30 +1993,28 @@
         },
         {
             "name": "doctrine/lexer",
-            "version": "1.1.0",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/lexer.git",
-                "reference": "e17f069ede36f7534b95adec71910ed1b49c74ea"
+                "reference": "1febd6c3ef84253d7c815bed85fc622ad207a9f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/lexer/zipball/e17f069ede36f7534b95adec71910ed1b49c74ea",
-                "reference": "e17f069ede36f7534b95adec71910ed1b49c74ea",
+                "url": "https://api.github.com/repos/doctrine/lexer/zipball/1febd6c3ef84253d7c815bed85fc622ad207a9f8",
+                "reference": "1febd6c3ef84253d7c815bed85fc622ad207a9f8",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2"
+                "php": ">=5.3.2"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^6.0",
-                "phpstan/phpstan": "^0.11.8",
-                "phpunit/phpunit": "^8.2"
+                "phpunit/phpunit": "^4.5"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1.x-dev"
+                    "dev-master": "1.0.x-dev"
                 }
             },
             "autoload": {
@@ -1891,12 +2028,12 @@
             ],
             "authors": [
                 {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com"
-                },
-                {
                     "name": "Roman Borschel",
                     "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
                 },
                 {
                     "name": "Johannes Schmitt",
@@ -1912,7 +2049,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2019-07-30T19:33:28+00:00"
+            "time": "2019-06-08T11:03:04+00:00"
         },
         {
             "name": "doctrine/persistence",
@@ -4686,6 +4823,20 @@
             "time": "2019-07-01T23:21:34+00:00"
         },
         {
+            "name": "harvesthq/chosen",
+            "version": "1.8.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/harvesthq/chosen/releases/download/v1.8.2/chosen_v1.8.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "^1.2.0"
+            },
+            "type": "drupal-library"
+        },
+        {
             "name": "jakub-onderka/php-console-color",
             "version": "v0.2",
             "source": {
@@ -4774,20 +4925,228 @@
             "time": "2018-09-29T18:48:56+00:00"
         },
         {
+            "name": "jquery/chosen",
+            "version": "1.8.7",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/harvesthq/chosen/releases/download/v1.8.7/chosen_v1.8.7.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "jquery.chosen"
+            }
+        },
+        {
+            "name": "jquery/geocomplete",
+            "version": "1.7.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/ubilabs/geocomplete/archive/1.7.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "jquery.geocomplete"
+            }
+        },
+        {
+            "name": "jquery/hotkeys",
+            "version": "0.2.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/jeresig/jquery.hotkeys/archive/0.2.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "jquery.hotkeys"
+            }
+        },
+        {
+            "name": "jquery/icheck",
+            "version": "1.0.2 ",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/fronteed/icheck/archive/1.0.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "jquery.icheck"
+            }
+        },
+        {
+            "name": "jquery/image-picker",
+            "version": "0.3.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/rvera/image-picker/archive/0.3.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "jquery.image-picker"
+            }
+        },
+        {
+            "name": "jquery/inputmask",
+            "version": "4.0.8",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/RobinHerbots/jquery.inputmask/archive/4.0.8.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "jquery.inputmask"
+            }
+        },
+        {
+            "name": "jquery/intl-tel-input",
+            "version": "15.0.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/jackocnr/intl-tel-input/archive/v15.0.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "jquery.intl-tel-input"
+            }
+        },
+        {
             "name": "jquery/jquery.cycle",
             "version": "3.0.3",
             "dist": {
                 "type": "file",
-                "url": "https://malsup.github.io/jquery.cycle.all.js"
+                "url": "https://malsup.github.io/jquery.cycle.all.js",
+                "reference": null,
+                "shasum": null
             },
             "type": "drupal-library"
+        },
+        {
+            "name": "jquery/rateit",
+            "version": "1.1.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/gjunge/rateit.js/archive/1.1.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "jquery.rateit"
+            }
+        },
+        {
+            "name": "jquery/select2",
+            "version": "4.0.7",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/select2/select2/archive/4.0.7.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "jquery.select2"
+            }
+        },
+        {
+            "name": "jquery/textcounter",
+            "version": "0.8.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/ractoon/jQuery-Text-Counter/archive/0.8.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "jquery.textcounter"
+            }
+        },
+        {
+            "name": "jquery/timepicker",
+            "version": "1.11.15",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/jonthornton/jquery-timepicker/archive/1.11.15.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "jquery.timepicker"
+            }
+        },
+        {
+            "name": "jquery/toggles",
+            "version": "4.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/simontabor/jquery-toggles/archive/v4.0.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "jquery.toggles"
+            }
         },
         {
             "name": "json/json2",
             "version": "1.0",
             "dist": {
                 "type": "file",
-                "url": "https://gist.github.com/atheken/654510#file-json2-js"
+                "url": "https://gist.github.com/atheken/654510#file-json2-js",
+                "reference": null,
+                "shasum": null
             },
             "type": "drupal-library"
         },
@@ -4925,16 +5284,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.2.2",
+            "version": "v4.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "1bd73cc04c3843ad8d6b0bfc0956026a151fc420"
+                "reference": "e612609022e935f3d0337c1295176505b41188c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/1bd73cc04c3843ad8d6b0bfc0956026a151fc420",
-                "reference": "1bd73cc04c3843ad8d6b0bfc0956026a151fc420",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/e612609022e935f3d0337c1295176505b41188c8",
+                "reference": "e612609022e935f3d0337c1295176505b41188c8",
                 "shasum": ""
             },
             "require": {
@@ -4942,7 +5301,7 @@
                 "php": ">=7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6.5 || ^7.0"
+                "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0"
             },
             "bin": [
                 "bin/php-parse"
@@ -4972,7 +5331,21 @@
                 "parser",
                 "php"
             ],
-            "time": "2019-05-25T20:07:01+00:00"
+            "time": "2019-08-12T20:17:41+00:00"
+        },
+        {
+            "name": "npm-asset/jquery",
+            "version": "2.2.4",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/jquery/-/jquery-2.2.4.tgz",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
         },
         {
             "name": "paragonie/random_compat",
@@ -5230,6 +5603,23 @@
                 "exception"
             ],
             "time": "2015-02-10T20:07:52+00:00"
+        },
+        {
+            "name": "progress-tracker/progress-tracker",
+            "version": "1.4.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/NigelOToole/progress-tracker/archive/v1.4.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "progress-tracker"
+            }
         },
         {
             "name": "psr/container",
@@ -5490,6 +5880,23 @@
             ],
             "description": "A polyfill for getallheaders.",
             "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
+            "name": "signature_pad/signature_pad",
+            "version": "2.3.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/szimek/signature_pad/archive/v2.3.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "signature_pad"
+            }
         },
         {
             "name": "stack/builder",
@@ -7528,6 +7935,55 @@
             "time": "2015-12-17T08:42:14+00:00"
         },
         {
+            "name": "wikimedia/composer-merge-plugin",
+            "version": "v1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wikimedia/composer-merge-plugin.git",
+                "reference": "81c6ac72a24a67383419c7eb9aa2b3437f2ab100"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wikimedia/composer-merge-plugin/zipball/81c6ac72a24a67383419c7eb9aa2b3437f2ab100",
+                "reference": "81c6ac72a24a67383419c7eb9aa2b3437f2ab100",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0",
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "composer/composer": "~1.0.0",
+                "jakub-onderka/php-parallel-lint": "~0.8",
+                "phpunit/phpunit": "~4.8|~5.0",
+                "squizlabs/php_codesniffer": "~2.1.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                },
+                "class": "Wikimedia\\Composer\\MergePlugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Wikimedia\\Composer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bryan Davis",
+                    "email": "bd808@wikimedia.org"
+                }
+            ],
+            "description": "Composer plugin to merge multiple composer.json files",
+            "time": "2017-04-25T02:31:25+00:00"
+        },
+        {
             "name": "zaporylie/composer-drupal-optimizations",
             "version": "1.1.0",
             "source": {
@@ -8077,11 +8533,11 @@
         },
         {
             "name": "drupal/coder",
-            "version": "8.3.5",
+            "version": "8.3.6",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/coder.git",
-                "reference": "35277fc8675b6a2cbb194f8880145a9c85c845c4"
+                "url": "https://git.drupalcode.org/project/coder.git",
+                "reference": "4337ddf58d28dbdee4e1367bf71ee13393ab9820"
             },
             "require": {
                 "ext-mbstring": "*",
@@ -8110,7 +8566,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2019-06-14T15:06:06+00:00"
+            "time": "2019-08-09T09:27:26+00:00"
         },
         {
             "name": "fabpot/goutte",
@@ -8455,16 +8911,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.9.1",
+            "version": "1.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "e6828efaba2c9b79f4499dae1d66ef8bfa7b2b72"
+                "reference": "007c053ae6f31bba39dfa19a7726f56e9763bbea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/e6828efaba2c9b79f4499dae1d66ef8bfa7b2b72",
-                "reference": "e6828efaba2c9b79f4499dae1d66ef8bfa7b2b72",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/007c053ae6f31bba39dfa19a7726f56e9763bbea",
+                "reference": "007c053ae6f31bba39dfa19a7726f56e9763bbea",
                 "shasum": ""
             },
             "require": {
@@ -8499,7 +8955,7 @@
                 "object",
                 "object graph"
             ],
-            "time": "2019-04-07T13:18:21+00:00"
+            "time": "2019-08-09T12:45:53+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -9424,16 +9880,16 @@
         },
         {
             "name": "sebastian/exporter",
-            "version": "3.1.0",
+            "version": "3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/exporter.git",
-                "reference": "234199f4528de6d12aaa58b612e98f7d36adb937"
+                "reference": "06a9a5947f47b3029d76118eb5c22802e5869687"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/234199f4528de6d12aaa58b612e98f7d36adb937",
-                "reference": "234199f4528de6d12aaa58b612e98f7d36adb937",
+                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/06a9a5947f47b3029d76118eb5c22802e5869687",
+                "reference": "06a9a5947f47b3029d76118eb5c22802e5869687",
                 "shasum": ""
             },
             "require": {
@@ -9461,6 +9917,10 @@
             ],
             "authors": [
                 {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de"
+                },
+                {
                     "name": "Jeff Welch",
                     "email": "whatthejeff@gmail.com"
                 },
@@ -9469,16 +9929,12 @@
                     "email": "github@wallbash.com"
                 },
                 {
-                    "name": "Bernhard Schussek",
-                    "email": "bschussek@2bepublished.at"
-                },
-                {
-                    "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de"
-                },
-                {
                     "name": "Adam Harvey",
                     "email": "aharvey@php.net"
+                },
+                {
+                    "name": "Bernhard Schussek",
+                    "email": "bschussek@gmail.com"
                 }
             ],
             "description": "Provides the functionality to export PHP variables for visualization",
@@ -9487,7 +9943,7 @@
                 "export",
                 "exporter"
             ],
-            "time": "2017-04-03T13:19:02+00:00"
+            "time": "2019-08-11T12:43:14+00:00"
         },
         {
             "name": "sebastian/global-state",
