@@ -177,6 +177,12 @@
                 ".editorconfig": "../.editorconfig",
                 ".gitattributes": "../.gitattributes"
             }
-        }
+        },
+      "enable-patching": true,
+        "patches": {
+           "drupal/bootstrap" : {
+                "3065149 - undefined_bridge issue" :  "https://www.drupal.org/files/issues/2019-07-04/undefined_bridge-3065149-3.patch"
+            }
+        }  
     }
 }
