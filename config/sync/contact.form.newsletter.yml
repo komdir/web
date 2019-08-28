@@ -1,0 +1,12 @@
+uuid: 7541169c-1657-4ba2-a611-0ed073f674c9
+langcode: da
+status: true
+dependencies: {  }
+id: newsletter
+label: Nyhedsbrevstilmelding
+recipients:
+  - komdir@roskilde.dk
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

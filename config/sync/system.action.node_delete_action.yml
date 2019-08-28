@@ -1,0 +1,13 @@
+uuid: 3d7b4822-c675-441a-892a-162f6e6efc6a
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: Zx0jD1Klh5tZaGJy8uOeR_2MCu9FDM4xg7TaUJUEbkI
+id: node_delete_action
+label: 'Slet indhold'
+type: node
+plugin: 'entity:delete_action:node'
+configuration: {  }

@@ -1,0 +1,42 @@
+uuid: f3c4cdd1-a6dd-4f3d-85a5-4d44caa5c0c0
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.list
+    - field.field.node.article.body
+    - field.field.node.article.field_date
+    - field.field.node.article.field_image
+    - field.field.node.article.field_subdivision
+    - node.type.article
+  module:
+    - datetime
+    - user
+_core:
+  default_config_hash: JtAg_-waIt1quMtdDtHIaXJMxvTuSmxW7bWyO6Zd68E
+id: node.article.list
+targetEntityType: node
+bundle: article
+mode: list
+content:
+  field_date:
+    weight: 1
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: short
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_subdivision:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden:
+  body: true
+  field_image: true
+  langcode: true
+  links: true

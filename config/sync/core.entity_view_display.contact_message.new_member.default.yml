@@ -1,0 +1,95 @@
+uuid: 1b8b4002-bf31-4526-a881-33044e57fee3
+langcode: da
+status: true
+dependencies:
+  config:
+    - contact.form.new_member
+    - field.field.contact_message.new_member.field_birthdate
+    - field.field.contact_message.new_member.field_ean
+    - field.field.contact_message.new_member.field_gender
+    - field.field.contact_message.new_member.field_job_position
+    - field.field.contact_message.new_member.field_kommune
+    - field.field.contact_message.new_member.field_phone
+    - field.field.contact_message.new_member.field_signup_date
+    - field.field.contact_message.new_member.field_state
+  module:
+    - datetime
+    - options
+id: contact_message.new_member.default
+targetEntityType: contact_message
+bundle: new_member
+mode: default
+content:
+  field_birthdate:
+    weight: 4
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_ean:
+    weight: 8
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_gender:
+    weight: 2
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_job_position:
+    weight: 3
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_kommune:
+    weight: 5
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_phone:
+    weight: 7
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_signup_date:
+    weight: 9
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_state:
+    weight: 6
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  message:
+    type: basic_string
+    weight: 0
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,21 @@
+uuid: fff090e0-42ad-4fdf-8ebc-73ec76434a8f
+langcode: da
+status: true
+dependencies:
+  config:
+    - contact.form.new_member
+    - field.storage.contact_message.field_state
+  module:
+    - options
+id: contact_message.new_member.field_state
+field_name: field_state
+entity_type: contact_message
+bundle: new_member
+label: Region
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,13 @@
+uuid: 3bf63294-39f1-4d37-a5ae-aadeef8ca957
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: lDM9mvIGAu8Sw8rt-uCO4Sr7yX5VPrDPxYcawkbKd6k
+id: node_make_unsticky_action
+label: 'Fjern klæbrighed'
+type: node
+plugin: node_make_unsticky_action
+configuration: {  }

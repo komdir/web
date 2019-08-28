@@ -1,0 +1,23 @@
+uuid: baa64eaf-4853-416e-b0cf-5bbdd4ca3e4e
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.slideshow_image
+  module:
+    - link
+id: node.slideshow_image.field_link
+field_name: field_link
+entity_type: node
+bundle: slideshow_image
+label: Link
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

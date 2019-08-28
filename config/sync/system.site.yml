@@ -1,0 +1,14 @@
+uuid: f263ff75-1c45-4972-9af5-c2ecd2613fd7
+name: Komdir
+mail: komdir@roskilde.dk
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: da
+default_langcode: da
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

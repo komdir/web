@@ -1,0 +1,27 @@
+uuid: 7f102886-fdeb-4f1a-be69-110370b06f06
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_documents
+    - media_entity.bundle.inline_documents
+  module:
+    - file
+id: media.inline_documents.field_documents
+field_name: field_documents
+entity_type: media
+bundle: inline_documents
+label: Documents
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'pdf txt doc docx ppt pptx key pages odt xls xlsx'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

@@ -1,0 +1,15 @@
+uuid: d1d2a3af-d128-447d-8629-d555a500a50b
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 97tvtzGOa8_flb22CzSjgtm_YkiGMHvEBO-6q2K9V_U
+id: node_search
+label: Indhold
+path: node
+weight: -10
+plugin: node_search
+configuration:
+  rankings: {  }

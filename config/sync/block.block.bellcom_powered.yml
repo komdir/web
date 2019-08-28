@@ -1,0 +1,22 @@
+uuid: e8e57e89-6786-4790-9edb-aea3f398a95f
+langcode: da
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bellcom
+_core:
+  default_config_hash: iggZSiUKz4mYP1YPJ8SsUfFu79HIgOTt6IDy3Up59aM
+id: bellcom_powered
+theme: bellcom
+region: footer
+weight: -10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }
