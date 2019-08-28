@@ -1,0 +1,23 @@
+uuid: 2728f8ca-18f3-4f71-9f28-5fae23bba0bd
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.banner
+  module:
+    - link
+id: node.banner.field_link
+field_name: field_link
+entity_type: node
+bundle: banner
+label: Link
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

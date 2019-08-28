@@ -1,0 +1,22 @@
+uuid: c2ccb710-0aea-4cbd-98c0-719b19ffce35
+langcode: da
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - site
+_core:
+  default_config_hash: 9RnnTUBcn0WRWXfrGOnId2H0Q31uQUeu_F5TnDxl2yg
+id: site_messages
+theme: site
+region: content
+weight: -7
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

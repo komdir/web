@@ -1,0 +1,50 @@
+uuid: f62f67a3-704a-457a-b9f9-a4f144334d90
+langcode: da
+status: true
+dependencies:
+  module:
+    - aggregator
+_core:
+  default_config_hash: Kq7aA6ktcMeaKzO7Ng8GW6KZu4n3WcPiuXcsFJlpjUo
+id: aggregator_feed.aggregator_feed.default
+targetEntityType: aggregator_feed
+bundle: aggregator_feed
+mode: default
+content:
+  checked:
+    type: timestamp_ago
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    label: inline
+    region: content
+  description:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  feed_icon:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  image:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  items:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  link:
+    type: uri_link
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    label: inline
+    region: content
+hidden:
+  langcode: true
+  more_link: true

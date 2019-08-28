@@ -1,0 +1,21 @@
+uuid: 6c845dc0-4eb7-4b41-a532-5874b61b7653
+langcode: da
+status: true
+dependencies:
+  module:
+    - contact
+id: contact_message.field_kommune
+field_name: field_kommune
+entity_type: contact_message
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

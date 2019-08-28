@@ -1,0 +1,14 @@
+uuid: 20d9d1e5-6116-4129-9d57-a6f6b946da8c
+langcode: da
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: c4zaT5cyPxuTXI6JOWt3qRtMvICT9tHB6d9a5VG-CmQ
+id: feedback
+label: 'Site feedback'
+recipients:
+  - komdir@roskilde.dk
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

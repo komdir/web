@@ -1,0 +1,32 @@
+uuid: 7862f086-d85b-488d-9af6-687abc13bebd
+langcode: da
+status: true
+dependencies:
+  config:
+    - views.view.indhold_fra_feed
+  module:
+    - node
+    - views
+  theme:
+    - site
+id: views_block__indhold_fra_feed_block_1
+theme: site
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:indhold_fra_feed-block_1'
+settings:
+  id: 'views_block:indhold_fra_feed-block_1'
+  label: 'Nyheder fra KL'
+  provider: views
+  label_display: visible
+  views_label: 'Nyheder fra KL'
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

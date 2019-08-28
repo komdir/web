@@ -1,0 +1,19 @@
+uuid: 664a0b5a-3e6e-4362-868c-f54760d66a72
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subdivision
+    - node.type.article
+id: node.article.field_subdivision
+field_name: field_subdivision
+entity_type: node
+bundle: article
+label: Underrubrik
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

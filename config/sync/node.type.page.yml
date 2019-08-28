@@ -1,0 +1,20 @@
+uuid: bab8a7bb-f577-4da0-9da5-d4410817f63c
+langcode: da
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: zhtPXoRcC6REiepM0k16zw__FDW5YOXDR6U2WlldTrs
+name: Indholdsside
+type: page
+description: 'Brug <em>simple sider</em> til dit statiske indhold, som f.eks. en "om os"-side.'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

@@ -1,0 +1,24 @@
+uuid: bfc62606-f284-4500-ba44-ed44a5ad06f0
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.article
+  module:
+    - datetime
+id: node.article.field_date
+field_name: field_date
+entity_type: node
+bundle: article
+label: Udgivelsesdato
+description: "Angiv det tidspunkt hvorpå der skal stå at artiklen er udgivet.\r\nTidspunktet styrer IKKE hvornår artiklen publiceres."
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,28 @@
+uuid: d585ddfb-8097-4536-9ee4-61d30db10045
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.media.inline_documents.field_documents
+    - media_entity.bundle.inline_documents
+  module:
+    - file
+id: media.inline_documents.default
+targetEntityType: media
+bundle: inline_documents
+mode: default
+content:
+  field_documents:
+    weight: 0
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

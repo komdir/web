@@ -1,0 +1,14 @@
+uuid: 5240d05a-5122-4963-ae67-b5868006eeff
+langcode: da
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: vDwaQMB485SRDS5QUFJf8awBp0DdlOYSMnYsLiw1l5s
+id: languages
+label: Languages
+category: Language
+likert: false
+options: ''

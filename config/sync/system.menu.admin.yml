@@ -1,0 +1,10 @@
+uuid: dac2969a-b782-4871-a585-1e17889d7fd2
+langcode: da
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sapEi2YDGoI9yQIT_WgIV2vUdQ6DScH0V3fAyTadAL0
+id: admin
+label: Administration
+description: 'Links til administrative opgaver'
+locked: true

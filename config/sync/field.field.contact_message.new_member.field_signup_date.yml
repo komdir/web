@@ -1,0 +1,24 @@
+uuid: 1bbf2dd8-f1b0-4761-8e3d-5b3f5f8022d3
+langcode: da
+status: true
+dependencies:
+  config:
+    - contact.form.new_member
+    - field.storage.contact_message.field_signup_date
+  module:
+    - datetime
+id: contact_message.new_member.field_signup_date
+field_name: field_signup_date
+entity_type: contact_message
+bundle: new_member
+label: Indmeldelsesdato
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

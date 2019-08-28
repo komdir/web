@@ -1,0 +1,22 @@
+uuid: fb44d901-b0ae-4760-b631-b3b3813d138d
+langcode: da
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bellcom
+_core:
+  default_config_hash: fNNLN48MSGSLiqwIFywCuxH2Dk_IxDbaP0kYhg_IPrg
+id: bellcom_content
+theme: bellcom
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

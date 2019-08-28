@@ -1,0 +1,21 @@
+uuid: bc110cc9-9869-4726-a36b-1d0c21defeb8
+langcode: da
+status: true
+dependencies:
+  config:
+    - contact.form.new_member
+    - field.storage.contact_message.field_birthdate
+  module:
+    - datetime
+id: contact_message.new_member.field_birthdate
+field_name: field_birthdate
+entity_type: contact_message
+bundle: new_member
+label: Fødselsdato
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

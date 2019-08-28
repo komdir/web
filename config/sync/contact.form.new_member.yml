@@ -1,0 +1,12 @@
+uuid: ef870c23-fd43-467d-af26-96ccf72f9a2c
+langcode: da
+status: true
+dependencies: {  }
+id: new_member
+label: 'Bliv medlem'
+recipients:
+  - komdir@roskilde.dk
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

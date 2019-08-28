@@ -1,0 +1,22 @@
+uuid: 5beab063-f3b7-4721-97b1-bbc681038a68
+langcode: da
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - site
+_core:
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: site_help
+theme: site
+region: content
+weight: -5
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

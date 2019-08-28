@@ -1,0 +1,14 @@
+langcode: da
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+id: creditcard_codes
+label: 'Credit card codes'
+category: ''
+likert: false
+options: "VI: 'Visa'\nMC: 'Mastercard'\nAE: 'American Express'\nDC: 'Discover'\n"
+uuid: b4df3f41-8b9a-4500-8234-b692616d2585
+_core:
+  default_config_hash: Ai9t0SUFQABCrwdqoi8LBqhaMzROfaFHGgsURpEWnm4
