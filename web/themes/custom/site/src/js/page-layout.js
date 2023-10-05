@@ -39,6 +39,15 @@ var pageLayout = (function ($) {
                 footerAttached();
             });
         }
+
+      var burgerMenu = document.querySelector('.navbar-toggle');
+      var navbarCollapse = document.querySelector('.navbar-collapse');
+
+      function toggleNavbar() {
+        navbarCollapse.classList.toggle('collapse');
+      }
+
+      burgerMenu.addEventListener('click', toggleNavbar);
     }
 
     /**
