@@ -153,7 +153,8 @@ page.sidebar_second is empty ? 'col-sm-12'
                                 <p>7100 Vejle</p>
                                 <p>E-mail.: <a href="mailto:komdir@vejle.dk">komdir@vejle.dk</a></p>
                                 <p><a href="http://findvej.dk/Skolegade1,7100" target="_blank">Vis på kort</a></p>
-                            </div>#}
+                            </div>
+                        </div>#}
                       <div class="footer-contact-information">
                         <h4>{{ footer_header }}</h4>
                         <div class="footer-marked">
@@ -161,10 +162,10 @@ page.sidebar_second is empty ? 'col-sm-12'
                           <p>{{ footer_address }}</p>
                           <p>{{ footer_zipcode }}</p>
                           <p>E-mail.: <a href="mailto:{{ footer_email }}">{{ footer_email }}</a></p>
+                          <p><a href="{{ footer_map }}" target="_blank">Vis på kort</a></p>
                           <p>{{ footer_extra }}</p>
                         </div>
                       </div>
-                        </div>
                     </div>
 
                     {# Begin - footer menu #}
@@ -180,7 +181,7 @@ page.sidebar_second is empty ? 'col-sm-12'
                     <div class="col-xs-12 col-sm-6">
                         <div class="footer-copyright">
                             <div class="footer-marked">
-                                <p>2016 © KOMDIR Danmark. Alle ophavsrettigheder forbeholdes.</p>
+                                <p><script>document.write(new Date().getFullYear())</script> © KOMDIR Danmark. Alle ophavsrettigheder forbeholdes.</p>
                             </div>
                         </div>
                     </div>

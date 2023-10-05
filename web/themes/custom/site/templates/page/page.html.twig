@@ -175,6 +175,7 @@ page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
                           <p>{{ footer_address }}</p>
                           <p>{{ footer_zipcode }}</p>
                           <p>E-mail.: <a href="mailto:{{ footer_email }}">{{ footer_email }}</a></p>
+                          <p><a href="{{ footer_map }}" target="_blank">Vis på kort</a></p>
                           <p>{{ footer_extra }}</p>
                         </div>
                       </div>
@@ -194,7 +195,7 @@ page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
                     <div class="col-xs-12 col-sm-6">
                         <div class="footer-copyright">
                             <div class="footer-marked">
-                                <p>2016 © KOMDIR Danmark. Alle ophavsrettigheder forbeholdes.</p>
+                                <p><script>document.write(new Date().getFullYear())</script> © KOMDIR Danmark. Alle ophavsrettigheder forbeholdes.</p>
                             </div>
                         </div>
                     </div>

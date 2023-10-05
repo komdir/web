@@ -17,6 +17,9 @@ site.settings:
     footer_email:
       type: string
       label: "E-mail adresse"
+    footer_map:
+      type: string
+      label: "Vis på kort"
     footer_extra:
       type: text
       label: "Fri tekst"

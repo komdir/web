@@ -41,6 +41,7 @@ $variables['footer_header'] = theme_get_setting('footer_header');
   $variables['footer_zipcode'] = theme_get_setting('footer_zipcode');
   $variables['footer_email'] = theme_get_setting('footer_email');
   $variables['footer_extra'] = theme_get_setting('footer_extra');
+  $variables['footer_map'] = theme_get_setting('footer_map');
 }
 
 /**
@@ -200,8 +201,15 @@ function site_form_system_theme_settings_alter(&$form, FormStateInterface $form_
          '#default_value' => theme_get_setting('footer_email'),
          '#description' => t('Indtast e-mail adresse.'),
        ];
-   $form['site_settings']['footer_extra'] = [
+
+   $form['site_settings']['footer_map'] = [
             '#type' => 'textfield',
+            '#title' => t('Vis på kort link'),
+            '#default_value' => theme_get_setting('footer_map'),
+            '#description' => t('Indsæt et link til visning af adressen på kort.'),
+          ];
+   $form['site_settings']['footer_extra'] = [
+            '#type' => 'textarea',
             '#title' => t('Fri tekst'),
             '#default_value' => theme_get_setting('footer_extra'),
             '#description' => t('Indtast en fri tekst.'),
