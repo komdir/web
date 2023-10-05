@@ -14,4 +14,12 @@
     $search_link.remove();
     $search_wrapper.append($search_icon);
 
+  $(document).ready(function() {
+    $('.navbar-toggle').click(function() {
+      $('.navbar-collapse').toggleClass('collapse');
+    });
+  });
+
 })(jQuery);
+
+

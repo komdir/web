@@ -56,6 +56,8 @@ var pageLayout = (function ($) {
     return pub;
 })(jQuery);
 
+
+
 // Document ready
 (function ($) {
     'use strict';
@@ -72,6 +74,14 @@ var pageLayout = (function ($) {
     $search_link.remove();
     $search_wrapper.append($search_icon);
 
+  $(document).ready(function() {
+    $('.navbar-toggle').click(function() {
+      $('.navbar-collapse').toggleClass('collapse');
+    });
+  });
+
 })(jQuery);
+
+
 
 //# sourceMappingURL=core.js.map
