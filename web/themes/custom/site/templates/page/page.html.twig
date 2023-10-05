@@ -157,8 +157,8 @@ page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-3">
-                      {% if page.footer_info %}
-                        <div class="footer-contact-information">
+
+                        {#<div class="footer-contact-information">
                             <h4>KOMDIR sekretariatet</h4>
                             <div class="footer-marked">
                                 <p>Vejle Kommune</p>
@@ -167,8 +167,18 @@ page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
                                 <p>E-mail.: <a href="mailto:komdir@vejle.dk">komdir@vejle.dk</a></p>
                                 <p><a href="http://findvej.dk/Skolegade1,7100" target="_blank">Vis på kort</a></p>
                             </div>
+                        </div>#}
+                      <div class="footer-contact-information">
+                        <h4>{{ footer_header }}</h4>
+                        <div class="footer-marked">
+                          <p>{{ footer_kommune }}</p>
+                          <p>{{ footer_address }}</p>
+                          <p>{{ footer_zipcode }}</p>
+                          <p>E-mail.: <a href="mailto:{{ footer_email }}">{{ footer_email }}</a></p>
+                          <p>{{ footer_extra }}</p>
                         </div>
-                      {% endif %}
+                      </div>
+
                     </div>
 
                     {# Begin - footer menu #}

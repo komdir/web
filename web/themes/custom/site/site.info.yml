@@ -16,7 +16,6 @@ regions:
   content: 'Content'
   sidebar_first: 'Primary'
   sidebar_second: 'Secondary'
-  footer_info: 'Footer Information'
   footer_menu: 'Footer menu'
 
 base theme: bellcom
