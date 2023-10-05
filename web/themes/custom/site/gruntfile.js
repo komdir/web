@@ -30,6 +30,7 @@ module.exports = function (grunt) {
         sass: {
             core: {
                 options: {
+                    implementation: require('sass'),
                     sourceMap: true
                 },
                 files: {
