@@ -156,16 +156,31 @@ page.sidebar_second is empty ? 'col-sm-12'
                             </div>
                         </div>#}
                       <div class="footer-contact-information">
-                        <h4>{{ footer_header }}</h4>
+                        {% if footer_header %}
+                          <h4>{{ footer_header }}</h4>
+                        {% endif %}
                         <div class="footer-marked">
-                          <p>{{ footer_kommune }}</p>
-                          <p>{{ footer_address }}</p>
-                          <p>{{ footer_zipcode }}</p>
-                          <p>E-mail.: <a href="mailto:{{ footer_email }}">{{ footer_email }}</a></p>
-                          <p><a href="{{ footer_map }}" target="_blank">Vis på kort</a></p>
-                          <p>{{ footer_extra }}</p>
+                          {% if footer_kommune %}
+                            <p>{{ footer_kommune }}</p>
+                          {% endif %}
+                          {% if footer_address %}
+                            <p>{{ footer_address }}</p>
+                          {% endif %}
+                          {% if footer_zipcode %}
+                            <p>{{ footer_zipcode }}</p>
+                          {% endif %}
+                          {% if footer_email %}
+                            <p>E-mail.: <a href="mailto:{{ footer_email }}">{{ footer_email }}</a></p>
+                          {% endif %}
+                          {% if footer_map %}
+                            <p><a href="{{ footer_map }}" target="_blank">Vis på kort</a></p>
+                          {% endif %}
+                          {% if footer_extra %}
+                            <p>{{ footer_extra }}</p>
+                          {% endif %}
                         </div>
                       </div>
+
                     </div>
 
                     {# Begin - footer menu #}
