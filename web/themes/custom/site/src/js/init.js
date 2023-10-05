@@ -23,7 +23,6 @@
   }
 
   burgerMenu.addEventListener('click', toggleNavbar);
-  burgerMenu.addEventListener('touchstart', toggleNavbar);
 
 
 })(jQuery);
