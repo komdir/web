@@ -796,5 +796,10 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 
+$config_directories = array(
+    CONFIG_SYNC_DIRECTORY => '../config/sync',
+);
+
+
 $settings["config_sync_directory"] = '../config/sync';
 
