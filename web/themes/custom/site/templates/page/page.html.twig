@@ -157,6 +157,7 @@ page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-3">
+                      {% if page.footer_info %}
                         <div class="footer-contact-information">
                             <h4>KOMDIR sekretariatet</h4>
                             <div class="footer-marked">
@@ -167,6 +168,7 @@ page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
                                 <p><a href="http://findvej.dk/Skolegade1,7100" target="_blank">Vis på kort</a></p>
                             </div>
                         </div>
+                      {% endif %}
                     </div>
 
                     {# Begin - footer menu #}
