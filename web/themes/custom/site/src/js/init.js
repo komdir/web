@@ -14,4 +14,6 @@
     $search_link.remove();
     $search_wrapper.append($search_icon);
 
+
 })(jQuery);
+

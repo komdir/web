@@ -1,0 +1,26 @@
+site.settings:
+  type: config_object
+  label: 'Footer'
+  mapping:
+    footer_header:
+      type: text
+      label: 'Overskrift'
+    footer_kommune:
+      type: text
+      label: 'Kommune'
+    footer_address:
+      type: text
+      label: 'Adresse'
+    footer_zipcode:
+      type: text
+      label: "Postnummer og by"
+    footer_email:
+      type: string
+      label: "E-mail adresse"
+    footer_map:
+      type: string
+      label: "Vis på kort"
+    footer_extra:
+      type: text
+      label: "Fri tekst"
+

@@ -1,0 +1,105 @@
+Komdir v2
+
+Up by .docksal 
+Php 7.4
+
+ sudo composer selfupdate --1
+
+Remove :
+{
+    "type"    : "package",
+    "package" : {
+        "name"    : "briancherne/jquery.hoverintent",
+        "version" : "master",
+        "type"    : "drupal-library",
+        "source"  : {
+            "url"       : "https://github.com/briancherne/jquery-hoverIntent.git",
+            "type"      : "git",
+            "reference" : "origin/master"
+        }
+    }
+},
+
+{
+  "type": "package",
+  "package": {
+    "name": "harvesthq/chosen",
+    "version": "1.8.2",
+    "type": "drupal-library",
+    "dist": {
+      "url": "https://github.com/harvesthq/chosen/releases/download/v1.8.2/chosen_v1.8.2.zip",
+      "type": "zip"
+    },
+    "require": {
+        "composer/installers": "^1.2.0"
+    }
+  }
+}
+
+"briancherne/jquery.hoverintent": "master",
+"harvesthq/chosen": "^1.8",
+
+drush pm:uninstall webform
+composer remove Drupal/webform
+
+Remove :
+"merge-plugin": {
+    "include": [
+        "web/modules/contrib/webform/composer.libraries.json"
+    ]
+},
+
+composer install
+composer update
+
+composer require “Drupal/pathauto: ^1.6”
+drush updatedb
+
+
+composer install
+
+
+composer remove wikimedia/composer-merge-plugin
+composer remove drupal-composer/drupal-scaffold 
+
+drush pm:uninstall devel
+drush pm:uninstall devel_generate
+composer remove Drupal/devel
+
+Remove : 
+"require-dev": {
+    "webflo/drupal-core-require-dev": "^8.7.0"
+},
+
+
+Upgrade to php 8.1
+Use composer 2
+
+Remove 
+cweagans/composer-patches": "^1.6.5",
+"drupal/media_entity": "^1.8",
+"drupal/media_entity_document": "^1.1",
+
+
+Change : 
+"drupal/admin_toolbar": "^1.27"  => “drupal/admin_toolbar": "^3.4"
+"drupal/entity": "1.0-rc3", =>  "drupal/entity": "^1.4",
+"drupal/entity_browser": "1.8", => "drupal/entity_browser": "^2.9"
+"drupal/linkit": "^4.3" => "drupal/linkit": "^5.0@beta"
+"drush/drush": "^190.0", => "drush/drush": "^11.0.0",
+“Drupal/core”: “^9.5.10”
+
+
+rm -rf vendor
+rm composer.lock
+composer install
+
+composer require require 'drupal/google_analytics:^4.0' 
+drush updatedb
+
+
+composer require 'drupal/color:^1.0'
+drush cr
+
+
+

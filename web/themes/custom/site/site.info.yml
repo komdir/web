@@ -3,6 +3,7 @@ type: theme
 description: A beautiful client theme.
 package: Bellcom
 core: 8.x
+core_version_requirement: ^8 || ^9 || ^10
 screenshot: dist/img/screenshot.png
 libraries:
   - 'site/theme'

@@ -39,6 +39,7 @@ var pageLayout = (function ($) {
                 footerAttached();
             });
         }
+
     }
 
     /**
@@ -55,3 +56,5 @@ var pageLayout = (function ($) {
 
     return pub;
 })(jQuery);
+
+

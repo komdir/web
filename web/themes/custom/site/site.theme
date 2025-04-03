@@ -1,5 +1,7 @@
 <?php
 
+use Drupal\Core\Form\FormStateInterface;
+
 /**
  * @file
  * Functions to support theming in the site theme.
@@ -32,6 +34,14 @@ function site_page_attachments_alter(array &$page) {
  * Implements hook_preprocess_page() for page.html.twig.
  */
 function site_preprocess_page(array &$variables) {
+
+$variables['footer_header'] = theme_get_setting('footer_header');
+  $variables['footer_kommune'] = theme_get_setting('footer_kommune');
+  $variables['footer_address'] = theme_get_setting('footer_address');
+  $variables['footer_zipcode'] = theme_get_setting('footer_zipcode');
+  $variables['footer_email'] = theme_get_setting('footer_email');
+  $variables['footer_extra'] = theme_get_setting('footer_extra');
+  $variables['footer_map'] = theme_get_setting('footer_map');
 }
 
 /**
@@ -148,3 +158,64 @@ function site_theme_suggestions_details_alter(array &$suggestions, array $variab
 function site_preprocess_menu_local_task(array &$variables) {
   //$variables['element']['#link']['url']->setOption('attributes', ['class'=>'rounded']);
 }
+
+
+function site_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
+  $form['site_settings'] = [
+    '#type' => 'details',
+    '#title' => t('Footer indstillinger'),
+    '#open' => TRUE,
+  ];
+
+  $form['site_settings']['footer_header'] = [
+    '#type' => 'textfield',
+    '#title' => t('Overskrift'),
+    '#default_value' => theme_get_setting('footer_header'),
+    '#description' => t('Indtast overskriften til footeren.'),
+  ];
+
+  $form['site_settings']['footer_kommune'] = [
+    '#type' => 'textarea',
+    '#title' => t('Kommune'),
+    '#default_value' => theme_get_setting('footer_kommune'),
+    '#description' => t('Indtast kommunen.'),
+  ];
+
+  $form['site_settings']['footer_address'] = [
+      '#type' => 'textarea',
+      '#title' => t('Addresse'),
+      '#default_value' => theme_get_setting('footer_address'),
+      '#description' => t('Indtast gadenavn og nummer.'),
+    ];
+
+   $form['site_settings']['footer_zipcode'] = [
+          '#type' => 'textarea',
+          '#title' => t('Postnummer og by'),
+          '#default_value' => theme_get_setting('footer_zipcode'),
+          '#description' => t('Indtast postnummer og by.'),
+   ];
+
+   $form['site_settings']['footer_email'] = [
+         '#type' => 'textfield',
+         '#title' => t('E-mail adresse'),
+         '#default_value' => theme_get_setting('footer_email'),
+         '#description' => t('Indtast e-mail adresse.'),
+       ];
+
+   $form['site_settings']['footer_map'] = [
+            '#type' => 'textfield',
+            '#title' => t('Vis på kort link'),
+            '#default_value' => theme_get_setting('footer_map'),
+            '#description' => t('Indsæt et link til visning af adressen på kort.'),
+          ];
+   $form['site_settings']['footer_extra'] = [
+            '#type' => 'textarea',
+            '#title' => t('Fri tekst'),
+            '#default_value' => theme_get_setting('footer_extra'),
+            '#description' => t('Indtast en fri tekst.'),
+          ];
+
+
+
+}
+
